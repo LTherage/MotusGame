@@ -1,0 +1,35 @@
+@startuml
+legend
+Fiche 3 - Exercice 2
+Le paquetage motus.joueurs
+Jean-François Condotta - 2024
+end legend
+skinparam classAttributeIconSize 0
+
+class Joueur [[java:motus.joueurs.Joueur]] {
+    +{static}NB_LETTRES_MOT: int {readOnly}
+    +{static}NB_TENTATIVES_MAX: int {readOnly}
+    +{static}CARACTERE_MOTIF: char {readOnly}
+    +<<constructor>>Joueur(pseudo: String)
+    +getPseudo(): String
+    +getMotif(): String
+    +getMotPropose(): String
+    +setMotPropose(motPropose: String): void
+    +getNbTentatives(): int
+    +incrementerNbTentatives(): void
+    +estGagnant(): boolean
+}
+class JoueurHumain [[java:motus.joueurs.JoueurHumain]] {
+	+<<constructor>>JoueurHumain(pseudo: String)
+	+joue(lettresBienPlacees : String ,gestionnaireMots : GestionnaireMots , motsDejaProposes : String[]) : String
+}
+class JoueurOrdinateur [[java:motus.joueurs.JoueurOrdinateur]] {
+	#<<constructor>>JoueurOrdinateur(pseudo: String)
+	+joue(lettresBienPlacees : String ,gestionnaireMots : GestionnaireMots , motsDejaProposes : String[]) : String
+}
+class UtilJoueurs [[java:motus.joueurs.UtilJoueurs]] {
+	+{static} creeJoueurs(): Joueur[*]
+}
+UtilJoueurs ..> Joueur
+UtilJoueurs ..> JoueurHumain
+@enduml

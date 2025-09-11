@@ -1,0 +1,10 @@
+@startuml
+legend
+Le plantUML de la classe Motus
+end legend
+skinparam classAttributeIconSize 0
+
+class Motus [[java:motus.GestionnaireMots]] {
+	+{static} Main(args : String[]): void
+}
+@enduml

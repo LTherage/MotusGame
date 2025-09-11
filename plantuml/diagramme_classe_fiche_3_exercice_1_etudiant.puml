@@ -1,0 +1,36 @@
+@startuml
+legend
+Fiche 3 - Exercice 1 (GestionnaireMots et UtilAleatoire doivent être complétées)
+Jean-François Condotta - 2024
+end legend
+skinparam classAttributeIconSize 0
+
+interface GestionnaireMots [[java:motus.GestionnaireMots]] {
+	+{static}CARACTERE_MOTIF: char {readOnly}
+	+motExiste(mot: String): boolean
+	+{static}donneLettresBienPlacees(motATrouver: String, motPropose: String): String
+	-{static}donneLettresPasPresentesDansMotif(mot: String, motif: String): String
+	+{static}donneLettresMalPlacees(motATrouver : String, motPropose :String): String
+	+{static}donneNouveauMotifVierge(nbCars : int): String
+	+{static}fusionneMotifs(premierMotif : String, secondMotif : String): String
+	+{static}nbLettresMotif(motif : String): String
+}
+class LexiqueMotus [[java:motus.LexiqueMotus]] {
+	+<<constructor>>LexiqueMotus()
+	+motExiste(mot : String): boolean
+	+fournitMotAleatoirement(): String
+	+donneMotsAvecMotif(motif : String): String[]
+}
+class UtilAleatoire [[java:util.UtilAleatoire]] {
+	-{static} generateurAleatoire: Random {readOnly}
+	+{static} genereEntierAleatoirement(max : int): int
+
+}
+class LexiqueFr [[java:lexique.LexiqueFr]]{
+    +<<constructor>>LexiqueFr(tailleMin : int, tailleMax : int)
+}
+
+LexiqueFr <|-- LexiqueMotus
+GestionnaireMots <|.. LexiqueMotus
+LexiqueMotus ..> UtilAleatoire
+@enduml

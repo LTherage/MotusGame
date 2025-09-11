@@ -1,0 +1,17 @@
+@startuml
+legend
+Fiche 3 - Exercice 2
+Le plantUML de la classe Tentative
+end legend
+skinparam classAttributeIconSize 0
+
+class Tentative [[java:motus.joueurs.Joueur]] {
+    +lettresMalPlacees: String
+    +joueur : Joueur
+    +motPropose : String;
+    +<<constructor>>Tentative(motATrouver : String ,motPropose : String , motValide : boolean , joueur : Joueur )
+    +afficheLettresBienEtMalPlacees(): void
+    + afficheLettresBienEtMalPlaceesEnCouleur(): void
+    + {static} afficheTentatives(tentatives : ArrayList<Tentative>, modeCouleur : boolean) : void
+}
+@enduml

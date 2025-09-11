@@ -1,0 +1,19 @@
+@startuml
+legend
+Fiche 3 - Exercice 2
+Le plantUML de la classe Partie
+end legend
+skinparam classAttributeIconSize 0
+
+class Partie [[java:motus.joueurs.Joueur]] {
+    +{static}NB_LETTRES_MOT: int {readOnly}
+    +{static}NB_TENTATIVES_MAX: int {readOnly}
+    +{static}CARACTERE_MOTIF: char {readOnly}
+    +<<constructor>>Partie(joueurs : ArrayList<Joueur>, gestionnaireMots : GestionnaireMots )
+    -estTerminee(): boolean
+    -motTrouve(): boolean
+    - faitJouerJoueurCourant() : void
+    + demarre() : void
+    + donneMotsJoues() : String[]
+}
+@enduml
