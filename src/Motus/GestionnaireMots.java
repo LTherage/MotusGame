@@ -6,7 +6,7 @@ package Motus;
  * Lors du jeu Motus les lettres du mot découvertes seront représentées par un motif.
  * Un motif est simplement une chaîne de caractères contenant le caractère ! pour indiquer que la lettre correspondante n'a pas encore été trouvée.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 public interface GestionnaireMots {
 	
@@ -18,7 +18,7 @@ public interface GestionnaireMots {
 	/**
 	 * Méthode retournant true si et seulement le mot donné en paramètre existe.
 	 * 
-	 * @param orthographe La chaîne de caractères à tester (peu être en minuscule ou
+	 * @param mot La chaîne de caractères à tester (peu être en minuscule ou
 	 *                    majuscule mais est toujours non null).
 	 * @return true si et seulement si ce mot existe.
 	 */

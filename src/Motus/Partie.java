@@ -2,9 +2,9 @@ package Motus;
 
 import java.util.ArrayList;
 
-import motus.joueurs.Joueur;
-import util.UtilAffichage;
-import util.UtilAleatoire;
+import Motus.joueurs.Joueur;
+import Motus.util.UtilAffichage;
+import Motus.util.UtilAleatoire;
 /**
  * Une occurence de cette classe correspond à une partie du jeu Motus.
  */

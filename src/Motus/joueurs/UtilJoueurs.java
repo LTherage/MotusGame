@@ -6,7 +6,7 @@ import util.UtilAffichage;
 import util.UtilSaisies;
 /**
  * Classe contenant une méthode permettant de paramètrer les joueurs du jeu Motus.
- * @author Jean-François Condotta - 2024
+ * @author  Ludovic Thérage - 2024
  */
 public class UtilJoueurs {
 	/**

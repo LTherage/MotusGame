@@ -4,7 +4,7 @@ import java.util.Random;
 /**
  * Cette classe contient une méthode permettant de générer aléatoirement un nombre entier.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 public class UtilAleatoire {
 	

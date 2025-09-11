@@ -2,8 +2,8 @@ package Motus;
 
 import java.util.ArrayList;
 
-import motus.joueurs.Joueur;
-import util.UtilAffichage;
+import Motus.joueurs.Joueur;
+import Motus.util.UtilAleatoire;
 
 /**
  * Cette classe représente une tentative (un mot proposé par un joueur ou la tentative initiale).
@@ -27,7 +27,7 @@ final public class Tentative {
 	/**
 	 * Le joueur qui a fait la tentative.
 	 */
-	final public Joueur joueur;
+	final public Motus.joueurs.Joueur joueur;
 	
 	/**
 	 * Constructeur permettant de créer une nouvelle tentative.
@@ -36,7 +36,7 @@ final public class Tentative {
 	 * @param motValide Indique si le mot est un mot valide.
 	 * @param joueur Le joueur ayant fait la tentative.
 	 */
-	protected Tentative(String motATrouver,String motPropose,boolean motValide,Joueur joueur) {
+	protected Tentative(String motATrouver,String motPropose,boolean motValide, Motus.joueurs.Joueur joueur) {
 		this.motPropose = null;
 		this.lettresBienPlacees = null;
 		this.lettresMalPlacees = null;

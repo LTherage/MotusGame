@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Une classe contenant différentes méthodes permettant d'effectuer des saisies.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 public class UtilSaisies {
 

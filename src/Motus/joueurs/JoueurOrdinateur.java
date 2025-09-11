@@ -6,7 +6,7 @@ import util.UtilAleatoire;
 /**
  * Cette classe correspond aux joueurs de type ordinateur.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 public class JoueurOrdinateur extends Joueur {
 

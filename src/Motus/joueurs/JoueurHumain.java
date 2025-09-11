@@ -1,11 +1,11 @@
 package Motus.joueurs;
 
-import motus.GestionnaireMots;
-import util.UtilSaisies;
+import Motus.GestionnaireMots;
+import Motus.util.UtilSaisies;
 /**
  * Cette classe correspond aux joueurs humains.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 final public class JoueurHumain extends Joueur {
 

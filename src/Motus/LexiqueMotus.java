@@ -1,16 +1,17 @@
 package Motus;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
-import lexique.LexiqueFr;
-import lexique.Mot;
-import util.UtilAleatoire;
+import Motus.util.LexiqueFr;
+import Motus.GestionnaireMots;
+import Motus.util.UtilAleatoire;
 /*
  * Les occurences de cette classe correspondent aux gestionnaires de mots du jeu Motus.
  * Un gestionnaire de mots du jeu Motus permettent de gérer des mots français de taille comprise
  * entre 5 et 12 caractères.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  * 
  */
 final public class LexiqueMotus extends LexiqueFr implements GestionnaireMots {
@@ -26,13 +27,19 @@ final public class LexiqueMotus extends LexiqueFr implements GestionnaireMots {
 		return chercheMotsAvecOrthographe(mot).size()!=0;
 	}
 
-	@Override
+    private Collection<Object> chercheMotsAvecOrthographe(String mot) {
+        return null;
+    }
+
+    @Override
 	public String fournitMotAleatoirement() {
 		int index=UtilAleatoire.genereEntierAleatoirement(getNbMots());
 		return this.getMot(index).getOrthographe();
 	}
 
-	@Override
+
+
+    @Override
 	public String[] donneMotsAvecMotif(String motif) {
 		ArrayList<String> res=new ArrayList<String>();
 		motif=motif.replace(CARACTERE_MOTIF,'.');
@@ -47,5 +54,9 @@ final public class LexiqueMotus extends LexiqueFr implements GestionnaireMots {
 			resultat[i]=res.get(i);
 		return resultat;
 	}
+
+    private int getNbMots() {
+        return 0;
+    }
 
 }

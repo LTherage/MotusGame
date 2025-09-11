@@ -6,7 +6,7 @@ import Motus.GestionnaireMots;
 /**
  * Une instance de cette classe représente un joueur du jeu Motus.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 public abstract class Joueur {
 	

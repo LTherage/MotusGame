@@ -3,7 +3,7 @@ package Motus.util;
 /**
  * Une classe contenant une méthode permettant d'afficher du texte en couleur.
  * 
- * @author Jean-François Condotta - 2024
+ * @author Ludovic Thérage - 2024
  */
 public class UtilAffichage {
 
