@@ -55,7 +55,7 @@
 
 ## 🦄 Features
 
-<code>❯ REPLACE-ME</code>
+<code>❯ Motus en java </code>
 
 ---
 
